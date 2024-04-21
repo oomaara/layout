@@ -3,47 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fancy Layout</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Bootstrap Layout</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
-<header>
-  <div class="brand">Brand</div>
-  <nav>Nav</nav>
-  <div class="tools">Tools</div>
-</header>
+  <!-- Header -->
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">Brand</div>
+      <div class="col-md-6">Global Navigatin</div>
+      <div class="col-md-3">Tools</div>
+    </div>
+  </header>
 
-<div class="hero">
-  <div class="feature">
-    <h2>Feature</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <button class="btn">Learn More</button>
-  </div>
-  <div class="action">
-    <h2>Action</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <button class="btn">Get Started</button>
-  </div>
-</div>
+  <!-- Hero Section -->
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+            <div class="row">
+            <div class="col-md-12">
+                <h2>Feature</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet.</p>
+                <button type="button" class="btn btn-primary">Learn More</button> <!-- Call-to-action button -->
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-md-12">
+                <h2>Call to action</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet.</p>
+                <button type="button" class="btn btn-primary">Get Started</button> <!-- Another call-to-action -->
+            </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="media">
+            <img class="mr-4" src="cat_ad.jpg" alt="Advertisement"> <!-- Advertisement image with alt text -->
+        </div>
+      </div>
+    </div>
+  </section>
 
-<main>
-  <div class="ad">
-    <img src="cat-ad.jpg" alt="Ad">
-  </div>
-  <div class="feature">
-    <h2>Feature</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <button class="btn">Learn More</button>
-  </div>
-  <div class="listing">
-    <h2>Listings</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <button class="btn">View Listings</button>
-  </div>
-</main>
+  <!-- Body Section -->
+  <section class="container-fluid">
+    <div class="row">
 
-<footer>Footer</footer>
+      <div class="col-md-8">
+      <div class="row">
 
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Feature</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Listings</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+      </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-12">Sidebar Feature</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">Footer</div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
